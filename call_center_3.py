@@ -58,5 +58,3 @@ st.subheader("🏆 Top Agentes con Mayor AHT")
 top_agentes = df_filtered.groupby("Agente")["AHT Promedio (min)"].mean().reset_index().sort_values(by="AHT Promedio (min)", ascending=False)
 st.dataframe(top_agentes)
 
-st.caption("Creado con ❤️ por Samuel y ChatGPT")
-
